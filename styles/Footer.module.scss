@@ -1,0 +1,135 @@
+footer {
+  .yearsLogoContainer {
+    background-color: #202020;
+    text-align: center;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+    .yearsLogo {
+      max-width: 84%;
+    }
+  }
+
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .textLabel {
+    background-color: #202020;
+    padding: 2em 1em;
+    margin-bottom: 10px;
+
+    h6 {
+      color: #fec240;
+      font-size: 1.3em;
+      letter-spacing: 1px;
+      font-weight: 900;
+      margin-right: 2%;
+    }
+    p {
+      font-size: 1em;
+      color: #c1c1c1;
+      font-weight: 500;
+    }
+    a {
+      font-size: 1em;
+      color: #c1c1c1;
+      font-weight: 400;
+      overflow-wrap: break-word;
+    }
+
+    a:hover {
+      color: #fec240;
+    }
+  }
+
+  .copyRight {
+    font-weight: 500;
+    font-size: 1.5em;
+  }
+
+  .links {
+    padding: 0;
+    li {
+      margin: 0.5em 0;
+    }
+    li a {
+      font-weight: 500;
+      font-size: 1em;
+    }
+    a:hover {
+      color: #fec240;
+    }
+  }
+
+  .followUs {
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    .icon {
+      margin-left: 0;
+      margin-right: 0;
+      padding-right: 0;
+      cursor: pointer;
+    }
+    .icon:hover {
+      color: #fec240;
+    }
+  }
+
+  .ourNewsLetter {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 20px;
+
+    .ourNewsLetterLabel {
+      text-align: center;
+      background-color: #c82509;
+      padding: 0.4em;
+      margin-top: 10px;
+      height: calc(2.8em + 0.75rem);
+      letter-spacing: 1px;
+      p {
+        font-size: 1.7em;
+      }
+    }
+
+    .ourNewsletterEmail {
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 10px;
+      label {
+        display: none;
+      }
+      input {
+        border: none;
+        font-size: 1.3em;
+        font-weight: 700;
+        border-radius: 0 !important;
+        letter-spacing: 2px;
+        height: calc(2.1em + 0.75rem + 1px);
+      }
+    }
+
+    .ourNewsletterSubscribeBtn {
+      margin-top: 10px;
+      text-align: center;
+      padding-left: 0;
+      padding-right: 0;
+
+      input {
+        border: none;
+        font-size: 1.4em;
+        color: #fff;
+        background-color: #c82509;
+        letter-spacing: 1px;
+        width: 100%;
+        height: calc(2em + 0.75rem);
+      }
+    }
+  }
+}

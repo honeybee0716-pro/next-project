@@ -1,0 +1,431 @@
+
+.priceQuoteSection {
+  background-color: #e6decc;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+
+  .planNameCont {
+    font-size: 3.7rem;
+    color: #000;
+    display: inline-block;
+    font-weight: 700;
+    @media (max-width:1058px){
+      font-size: 3.7vw;
+    }
+    sup {
+      font-size: 1.5rem;
+      top: 23px;
+      font-weight: 100;
+      vertical-align: top;
+      right: 15px;
+      @media (max-width:767px){
+        display: none;
+      }
+      @media (min-width:767px) and (max-width:1058px){
+        font-size: 1.5vw;
+      }
+    }
+    small {
+      font-size: 1.5rem;
+      font-weight: 100;
+      @media (max-width:1040px){
+        font-size: 1.5vw;
+      }
+      @media (min-width:767px) and (max-width:1058px){
+        font-size: 1.5vw;
+      }
+    }
+  }
+
+  .formTitle {
+    font-size: 1.6rem;
+    color: #668671;
+    font-weight: 500;
+    margin-left: -15px;
+    letter-spacing: 1px;
+    font-family: "FelixTitling";
+  }
+
+  .formSubTitle {
+    margin-left: -15px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #668671;
+    text-transform: uppercase;
+    border-bottom: 2px solid #457656;
+    font-family: "FelixTitling";
+    span {
+      font-size: 0.9rem;
+    }
+  }
+
+  .priceQuoteCont {
+    padding-top: 30px;
+    width: 90%;
+  }
+
+  .image {
+    margin: 15px;
+    box-shadow: 4px 3px 10px rgba(0, 0, 0, 50%);
+    width: 100%;
+  }
+
+  .priceDiff {
+    font-style: italic;
+    font-weight: 400 !important;
+  }
+
+  .priceQuoteTotal {
+    border-top: double #457656;
+    border-bottom: double #457656;
+    border-width: 10px;
+    padding: 11px 0;
+    display: inline-block;
+    width: 100%;
+    .priceQuoteTotalLeft {
+      width: 60%;
+      float: left;
+      h5 {
+        font-size: 2.1rem;
+        font-weight: 600;
+      }
+    }
+    .priceQuoteTotalRight {
+      width: 39%;
+      float: right;
+      h5 {
+        font-size: 2.15em;
+        color: #457656;
+        font-weight: 700;
+      }
+      h5 small {
+        font-size: 1rem;
+        display: block;
+        color: #000;
+      }
+    }
+  }
+  .itemPackageCont {
+    border: 1px solid;
+    color: #668671;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 4px 3px 10px rgba(0, 0, 0, 50%);
+    h5 {
+      font-weight: 600;
+    }
+    p {
+      margin-top: 0.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+  }
+  .mainText {
+    margin-right: 5px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .formText {
+    span,
+    label {
+      margin-right: 5px;
+      font-size: 14px;
+      font-weight: 500;
+      // text-align: right;
+      min-width: 90px;
+    }
+    @media (max-width: 1000px) and (min-width: 800px) {
+      label {
+        height: 5px;
+        width: 90px;
+      }
+    }
+    @media (max-width: 770px) and (min-width: 300px) {
+      label {
+        height: 30px;
+        width: 90px;
+      }
+    }
+    input {
+      min-width: 170px;
+      float: right;
+    }
+    // .inputBoxForDatePicker {
+    //   min-width: 170px;
+    //   float: right;
+    // }
+    select {
+      width: 200px;
+      float: right;
+    }
+    @media (min-width: 576px) {
+      input {
+        float: none;
+      }
+    }
+    @media (min-width: 576px) {
+      select {
+        float: none;
+      }
+    }
+    // @media (min-width: 300px) {
+    //   .inputBoxForDatePicker {
+    //     float: none;
+    //   }
+    // }
+
+    // @media (max-width: 576px) and (min-width: 476px) {
+    //   .mainForDatePicker {
+    //     width: 56%;
+    //     display: flex;
+    //     justify-content: space-between;
+    //   }
+    // }
+    // @media (max-width: 576px) and (min-width: 368px) {
+    //   .mainForDatePicker {
+    //     width: 46%;
+    //     display: flex;
+    //     justify-content: space-between;
+    //   }
+    // }
+    // @media (max-width: 368px) and (min-width: 306px) {
+    //   .mainForDatePicker {
+    //     display: flex;
+    //     flex-direction: column;
+    //   }
+    // }
+    // @media (max-width: 368px) and (min-width: 350px) {
+    //   .inputBoxForDatePicker {
+    //     margin-left: 90px;
+    //   }
+    // }
+    // @media (max-width: 350px) and (min-width: 335px) {
+    //   .inputBoxForDatePicker {
+    //     margin-left: 78px;
+    //   }
+    // }
+    // @media (max-width: 335px) and (min-width: 320px) {
+    //   .inputBoxForDatePicker {
+    //     margin-left: 60px;
+    //   }
+    // }
+    // @media (max-width: 576px) and (min-width: 366px) {
+    //   .inputBoxForDatePicker {
+    //     float: left;
+    //   }
+    // }
+    @media (max-width: 576px) and (min-width: 320px) {
+      .inputBoxForDatePicker {
+        float: right;
+      }
+      .labelDate {
+        float: left;
+      }
+    }
+    .mainForDatePicker {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @media (max-width: 10000px) and (min-width: 2500px) {
+      .mainForDatePicker {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    @media (max-width: 2500px) and (min-width: 1600px) {
+      .mainForDatePicker {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    @media (max-width: 1600px) and (min-width: 1346px) {
+      .mainForDatePicker {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+    }
+    @media (max-width: 1346px) and (min-width: 768px) {
+      .mainForDatePicker {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .containerDatePicker,
+    .containerDatePicker> div.react-datepicker-wrapper,
+    .containerDatePicker> div > div.react-datepicker__input-container
+    .containerDatePicker> div > div.react-datepicker__input-container input {
+      width: 100% !important;
+    }
+
+    @media (max-width: 576px) and (min-width: 370px) {
+      .mainForDatePicker {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .containerDatePicker {
+        display: flex;
+        justify-content: end;
+      }
+    }
+    @media (max-width: 370px) and (min-width: 280px) {
+      .mainForDatePicker {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .containerDatePicker {
+        display: flex;
+        justify-content: end;
+      }
+    }
+
+    .inputBox {
+      width: 200px;
+      height: 30px;
+      box-shadow: 3px 3px 6px #656565;
+      border: 1px solid #656565;
+    }
+    .selectInputBox {
+      width: 200px;
+      height: 30px;
+      box-shadow: 3px 3px 6px #656565;
+      border: 1px solid #656565;
+    }
+    .inputBoxForDatePicker {
+      width: 200px;
+      height: 30px;
+      box-shadow: 3px 3px 6px #656565;
+      border: 1px solid #656565;
+    }
+
+    @media (max-width: 900px) and (min-width: 750px) {
+      .inputBox {
+        width: 150px;
+      }
+    }
+    @media (max-width: 900px) and (min-width: 750px) {
+      .selectInputBox {
+        width: 170px;
+      }
+    }
+    @media (max-width: 900px) and (min-width: 750px) {
+      .inputBoxForDatePicker {
+        width: 150px;
+      }
+    }
+    @media (max-width: 1000px) and (min-width: 799px) {
+      .inputBoxForDatePicker {
+        margin-top: 7px;
+      }
+    }
+  }
+
+  .formRadio {
+    margin-top: 20px;
+    label,
+    span {
+      margin-right: 5px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    [type="radio"]:checked,
+    [type="radio"]:not(:checked) {
+      position: absolute;
+      left: -9999px;
+    }
+    [type="radio"]:checked + label,
+    [type="radio"]:not(:checked) + label {
+      position: relative;
+      padding-left: 28px;
+      cursor: pointer;
+      line-height: 20px;
+      display: inline-block;
+    }
+    [type="radio"]:checked + label:before,
+    [type="radio"]:not(:checked) + label:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 18px;
+      height: 18px;
+      border: 1px solid #ddd;
+      border-radius: 100%;
+      background: #457656;
+    }
+    [type="radio"]:not(:checked) + label:before {
+      background: #fff;
+    }
+    [type="radio"]:checked + label:after,
+    [type="radio"]:not(:checked) + label:after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: #fff;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      border-radius: 100%;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+    [type="radio"]:not(:checked) + label:after {
+      opacity: 0;
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+    [type="radio"]:checked + label:after {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+
+  .stepperImg {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  :global(.react-datepicker-wrapper) {
+    width: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .priceQuoteSection {
+    padding: 0;
+  }
+}
+
+.viewQuoteSection {
+  background-color: #e6decc;
+}
+
+.getQuoteBtnContainer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.getQuoteBtn {
+  border-radius: 15px;
+  font-size: 1.563em;
+  border: solid 2px #000;
+  color: #fff !important;
+  font-weight: 600;
+  background-color: #618c70 !important;
+  float: right;
+}
+
+.getQuoteBtn:hover {
+  background-color: black !important;
+  transform: scale(1.2);
+}

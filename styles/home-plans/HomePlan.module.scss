@@ -1,0 +1,130 @@
+@import "../_utils/parameters";
+@import "../_utils/base";
+
+.homePlan {
+  .img {
+    width: 270px;
+    height: 180px;
+  }
+  .banner {
+    display: grid;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      box-shadow: $box-shadow-navbar;
+      z-index: 1;
+      max-height: 80vh;
+      height: fit-content;
+    }
+
+    @media only screen and (max-width: 400px) and (min-width: 310px) {
+      img {
+        height: 25vh;
+      }
+    }
+  }
+
+  .overlay {
+    width: 25vw;
+    max-height: 70vh;
+    margin: auto;
+    padding: 2vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+
+    @include media-breakpoint-max(sm) {
+      width: 50vw;
+    }
+  }
+
+  .content,
+  .overlay {
+    grid-area: 1 / 1;
+  }
+  .selectorForSorting {
+    display: flex;
+    justify-content: center;
+  }
+  .selectInputBox {
+    width: 200px;
+    height: 30px;
+    box-shadow: 3px 3px 6px #656565;
+    border: 1px solid #656565;
+  }
+  label {
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .searchLbl,
+  .titleLbl {
+    color: white;
+    text-align: center;
+    font-size: $font-size-base;
+  }
+
+  .titleLbl {
+    margin-bottom: 1vh;
+  }
+  .searchLbl {
+    padding: 3px;
+    background-color: #618c70;
+  }
+
+  .cardbanner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cards {
+    display: inline-block;
+    width: 270px;
+    height: 180px;
+    margin: 1.1vw;
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .lblCont {
+      .cardLbl {
+        font-weight: 700;
+        color: #3a3a3a;
+        font-size: $font-size-large;
+      }
+      .cardLbl2 {
+        margin-left: 5px;
+        font-weight: 600;
+        font-size: $font-size-base;
+      }
+    }
+
+    .cardImage {
+      box-shadow: $box-shadow-left;
+      width: 250px;
+      height: 167px;
+      img {
+        object-fit: cover;
+        width: 100%;
+        //height: 180px;
+        transition: transform 0.7s;
+        z-index: 1;
+      }
+      img:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+  @media only screen and (max-width: 580px) and (min-width: 310px) {
+    .cards {
+      width: 75%;
+    }
+  }
+
+  :global(.drop) {
+    max-width: 90%;
+  }
+}

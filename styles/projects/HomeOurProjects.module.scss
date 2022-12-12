@@ -1,0 +1,140 @@
+@import "../components/button";
+
+.tab {
+  .tabTitle {
+    color: #6e3933 !important;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+  }
+}
+
+.navbarCont {
+  background: #618c70 !important;
+  padding: 5px;
+  box-shadow: -2px 7px 8px #505050;
+  position: relative;
+  .title {
+    font-size: 2em;
+    font-weight: 700;
+    border-bottom: solid #c4d2c9;
+  }
+}
+
+.navbarCont::after {
+  position: absolute;
+  content: "";
+  border: 2px dotted #9bb3a3;
+  height: 85%;
+  width: 99.4%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.projectCards {
+  background: #d7d7d7;
+  padding: 4% 5%;
+  cursor: pointer;
+
+  .label {
+    text-align: center;
+    font-family: "FelixTitling";
+    font-weight: 900;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  img {
+    width: 100%;
+    margin-top: 5%;
+    height: 200px;
+    background: white;
+    padding: 2%;
+    object-fit: contain;
+    transition: transform 0.3s;
+  }
+
+  .redirectBtnCont {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+  }
+}
+
+.plansSection {
+  background-color: #bdcac2;
+
+  a {
+    cursor: pointer;
+    color: inherit;
+  }
+  .card {
+    background-color: white;
+    height: 100%;
+  }
+
+  .imgCont {
+    img {
+      max-width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .subText {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    color: #000;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    display: block;
+  }
+
+  .title::after {
+    content: "";
+    background-color: #721616;
+    position: absolute;
+    width: 160px;
+    height: 4px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -10px;
+  }
+}
+
+.active {
+  // background-image: url("../../public/_assets/common/navbar/tab-bg.png");
+  background-image: url("http://2021.thelogconnection.com/_next/static/media/tab-bg.75211082.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  pointer-events: none;
+}
+
+.notActive {
+  background-image: none;
+}
+
+.notActive:hover {
+  // background-image: url("../../public/_assets/common/navbar/tab-bg.png");
+  background-image: url("http://2021.thelogconnection.com/_next/static/media/tab-bg.75211082.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: 0.2s;
+  left: 0;
+}
+
+.redirectBtn {
+  @extend .green-rounded-btn;
+}

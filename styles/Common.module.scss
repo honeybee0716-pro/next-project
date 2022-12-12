@@ -1,0 +1,208 @@
+@import "_utils/base";
+@import "_utils/parameters";
+
+.bannerCont {
+  padding: 0;
+  .RightArrow {
+    position: absolute;
+    top: 50%;
+    left: 93%;
+    background-color: transparent;
+    color: white;
+    padding: 12px 12px;
+    border: none;
+    cursor: pointer;
+  }
+  @media (max-width: 835px) and (min-width: 720px) {
+    .RightArrow {
+      left: 90%;
+      top: 45%;
+    }
+  }
+  @media only screen and (max-width: 720px) and (min-width: 693px) {
+    .RightArrow {
+      padding: 0px;
+      left: 90%;
+      top: 45%;
+      width: 40px;
+    }
+  }
+  @media only screen and (max-width: 693px) and (min-width: 550px) {
+    .RightArrow {
+      padding: 0px;
+      left: 93%;
+      top: 52%;
+      width: 35px;
+    }
+  }
+  @media only screen and (max-width: 550px) and (min-width: 417px) {
+    .RightArrow {
+      padding: 0px;
+      left: 93%;
+      top: 45%;
+      width: 30px;
+    }
+  }
+  @media only screen and (max-width: 417px) and (min-width: 302px) {
+    .RightArrow {
+      padding: 0px;
+      left: 85%;
+      top: 34%;
+      width: 40px;
+    }
+  }
+
+  .LeftArrow {
+    position: absolute;
+    top: 50%;
+    right: 93%;
+    background-color: transparent;
+    color: white;
+    padding: 12px 12px;
+    border: none;
+    cursor: pointer;
+  }
+  @media (max-width: 835px) and (min-width: 720px) {
+    .LeftArrow {
+      right: 90%;
+      top: 45%;
+    }
+  }
+  @media only screen and (max-width: 720px) and (min-width: 693px) {
+    .LeftArrow {
+      padding: 0px;
+      right: 90%;
+      top: 45%;
+      width: 40px;
+    }
+  }
+  @media only screen and (max-width: 693px) and (min-width: 550px) {
+    .LeftArrow {
+      padding: 0px;
+      right: 93%;
+      top: 52%;
+      width: 35px;
+    }
+  }
+  @media only screen and (max-width: 550px) and (min-width: 417px) {
+    .LeftArrow {
+      padding: 0px;
+      right: 93%;
+      top: 45%;
+      width: 30px;
+    }
+  }
+  @media only screen and (max-width: 417px) and (min-width: 302px) {
+    .LeftArrow {
+      padding: 0px;
+      right: 85%;
+      top: 34%;
+      width: 40px;
+    }
+  }
+
+  .bannerImgCont {
+    .homeBannerImg {
+      object-fit: cover;
+      width: 100%;
+      box-shadow: $box-shadow-navbar;
+      z-index: 1;
+      max-height: 80vh;
+    }
+    .mainBannerImg {
+      object-fit: fill;
+      width: 100%;
+      box-shadow: $box-shadow-navbar;
+      z-index: 1;
+      max-height: 760px;
+    }
+    .mainBuildingBannerImg {
+      object-fit: cover;
+      width: 100%;
+      box-shadow: $box-shadow-navbar;
+      z-index: 1;
+      max-height: 30vh;
+    }
+  }
+}
+
+.navigatorBtnCont {
+  background-color: #e6decc;
+  padding: 2%;
+  .prev,
+  .next {
+    font-family: "Berlin Sans FB";
+    background: #618c70 !important;
+    padding: 4px 20px;
+    color: #fff;
+    box-shadow: 0px 6px 12px #6d6d6d;
+    font-size: 1.2rem;
+    border: solid 1px #5c5c5c;
+  }
+  .prevActive {
+    font-family: "Berlin Sans FB";
+    background: #618c70 !important;
+    padding: 4px 20px;
+    color: #fff;
+    margin-top: 60px;
+    box-shadow: 0px 6px 12px #6d6d6d;
+    font-size: 1.2rem;
+    border: solid 1px #5c5c5c;
+  }
+  .prev:hover,
+  .next:hover {
+    box-shadow: none;
+  }
+
+  .prev {
+    float: left;
+    margin-left: 1%;
+  }
+
+  .next {
+    float: right;
+    margin-right: 1%;
+  }
+}
+
+.commonTitle1 {
+  p {
+    font-size: 2em;
+    position: relative;
+    color: #666261;
+    font-weight: 700;
+    margin: 0.5em;
+  }
+  p::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100px;
+    background: #c78326;
+    height: 7px;
+  }
+}
+
+.divider {
+  color: #553c14;
+  height: 1px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.boxShadow1 {
+  box-shadow: -2px 7px 8px #505050;
+  z-index: 1;
+}

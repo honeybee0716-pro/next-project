@@ -1,0 +1,52 @@
+{
+  "name": "thelogconnectionweb",
+  "version": "0.1.0",
+  "description": "The Log Connection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "build-static": "next build && next export",
+    "clean": "rmdir /s /q node_modules",
+    "clean-build": "rmdir /s /q .next && rmdir /s /q out",
+    "reinstall": "npm run clean && npm install"
+  },
+  "dependencies": {
+    "@material-ui/core": "4.11.4",
+    "@material-ui/icons": "4.11.2",
+    "animate.css": "4.1.1",
+    "axios": "0.24.0",
+    "embla-carousel-autoplay": "^7.0.0",
+    "embla-carousel-react": "^7.0.0",
+    "flat-carousel": "^0.0.1",
+    "js-file-download": "0.4.12",
+    "mdb-react-ui-kit": "^4.2.0",
+    "mdbreact": "5.1.0",
+    "next": "12.0.8",
+    "next-compose-plugins": "2.2.1",
+    "next-fonts": "1.5.1",
+    "next-images": "1.7.0",
+    "next-share": "^0.18.0",
+    "path": "0.12.7",
+    "react": "17.0.1",
+    "react-animated-css": "1.2.1",
+    "react-bootstrap-typeahead": "5.1.4",
+    "react-datepicker": "4.1.1",
+    "react-dom": "17.0.1",
+    "react-facebook-share-link": "^1.0.4",
+    "react-grid-carousel": "1.0.1",
+    "react-image-lightbox": "5.1.4",
+    "react-photo-gallery": "8.0.0",
+    "react-player": "2.9.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-reveal": "1.2.2",
+    "react-share": "^4.4.0",
+    "react-toastify": "8.1.0",
+    "react-waypoint": "10.1.0"
+  },
+  "devDependencies": {
+    "sass": "^1.48.0"
+  }
+}

@@ -1,0 +1,25 @@
+.imageModal {
+    .thumbCont {
+      img {
+        width: 100%;
+      }
+    }
+  
+    :global(.modal-header) {
+      background-color: #bdcac1;
+      text-align: center;
+      :global(.modal-title) {
+        font-weight: 900;
+        font-size: 1.5rem;
+        strong {
+          font-size: 1.5rem;
+          font-weight: 900;
+          color: #a04030;
+        }
+      }
+    }
+    :global(.modal-body) {
+      background-color: #ede8dd;
+    }
+  }
+  

@@ -1,0 +1,43 @@
+.floorPlan {
+  // margin-left: 50px;
+  // margin-right: 50px;
+  .imgCont {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 2200px) and (min-width: 1400px) {
+      img {
+        width: 65%;
+        height: 80%;
+      }
+    }
+    @media (max-width: 1400px) and (min-width: 920px) {
+      img {
+        width: 80%;
+        height: 80%;
+      }
+    }
+    @media (max-width: 920px) and (min-width: 770px) {
+      img {
+        width: 90%;
+        height: 90%;
+      }
+    }
+    @media (max-width: 770px) and (min-width: 400px) {
+      img {
+        width: 75%;
+        height: 75%;
+      }
+    }
+    @media (max-width: 400px) and (min-width: 320px) {
+      img {
+        width: 90%;
+        height: 90%;
+      }
+    }
+  }
+}

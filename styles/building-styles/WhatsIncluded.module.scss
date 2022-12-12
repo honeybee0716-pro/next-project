@@ -1,0 +1,131 @@
+
+
+.whatsIncluded {
+  background-color: #e6decc;
+ 
+  .section1 {
+    h4 {
+      font-size: 2.5rem;
+      font-weight: 900;
+    }
+    h5 {
+      font-size: 2rem;
+      font-weight: 900;
+    }
+    p {
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+    .mainLeft {
+      background-color: #fff;
+      box-shadow: 0 0 12px #d0d0d0;
+      margin: 30px -60px 0 0;
+      padding: 28px;
+      position: relative;
+      z-index: 12;
+      height: fit-content;
+
+      .mainTitleCont {
+        margin-bottom: 15px;
+        h3 {
+          font-weight: 600;
+          font-size: 2.5rem;
+        }
+        h3::after {
+          content: "";
+          background-color: #721616;
+          position: absolute;
+          width: 165px;
+          height: 4px;
+          left: 3%;
+          bottom: 0;
+        }
+      }
+
+      .mainDescription {
+        strong {
+          color: #795137;
+          font-weight: 900;
+        }
+      }
+    }
+
+    .mainRight {
+      img {
+        width: 100%;
+        box-shadow: 0 0 30px #414141;
+      }
+    }
+  }
+}
+
+.wi {
+    margin: 2%;
+    .title {
+      color: #668671;
+      font-family: "Roboto";
+      border-bottom: 3px solid #668671;
+    }
+
+    .subTitle {
+      color: #668671;
+      font-family: "Roboto";
+      font-weight: 700;
+      font-size: 1.3rem;
+      line-height: 1;
+    }
+  
+    h4 {
+      font-size: 2.3rem;
+      font-weight: 900;
+    }
+
+    h5 {
+      font-size: 1.7rem;
+      font-weight: 900;
+    }
+
+    p {
+      font-family: "Roboto";
+      font-weight: 500;
+      margin: 0;
+      line-height: 1.2;
+      font-size: 1rem;
+    }
+  
+    .right {
+      .imgCont {
+        width: 25%;
+        display: inline-block;
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+
+    .faq {      
+      ul {
+        list-style: none;
+        li {
+          margin-top: 1%;
+          display: flow-root;
+          p {
+            display: flex;
+          }
+          span {
+            background: #618c70;
+            color: #fff;
+            font-size: 2em;
+            padding: 0.1em 0.3em;
+            border-radius: 15px;
+            box-shadow: 0px 6px 12px #6d6d6d;
+            border: solid 2px #000;
+            font-weight: 600;
+            float: left;
+            margin: 0 20px 0 0;
+          }
+        }
+      }
+    }
+  }

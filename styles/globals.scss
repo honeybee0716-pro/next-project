@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Calibri";
+  src: url("/fonts/Calibri.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Candara";
+  src: url("/fonts/CANDARA.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Candara Bold";
+  src: url("/fonts/CANDARAB.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Candara Italic";
+  src: url("/fonts/CANDARAI.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Candara Italic Bold";
+  src: url("/fonts/CANDARAZ.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FelixTitling";
+  src: url("/fonts/FelixTitling.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Myria";
+  src: url("/fonts/MYRIADAT.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  overflow-x: hidden;
+  font-family: "Candara";
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+
+
+
+
+@media (max-width: 1600px) {
+  .container {
+    max-width: 100%;
+  }
+}

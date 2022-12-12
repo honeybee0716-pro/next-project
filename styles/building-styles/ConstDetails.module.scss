@@ -1,0 +1,70 @@
+.constructionDetails {
+    .section1 {
+      background-color: #e6decc;
+      padding-left: 3%;
+      padding-right: 3%;
+      h3 {
+        font-weight: 900;
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.4rem;
+        a {
+          color: #a04030;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        a:hover {
+          color: #ff0000;
+          text-decoration: none;
+        }
+      }
+    }
+    .section2 {
+      background-color: #bdcac1;
+      padding-bottom: 15px;
+      .card {
+        cursor: pointer;
+        background-color: #ede8dd;
+        border: 1px solid #aaa;
+        margin: 4%;
+        box-shadow: -12px 12px 12px #505050;
+        img {
+          display: block;
+          width: 100%;
+        }
+        .label {
+          text-align: center;
+          color: #a04030;
+          font-weight: 900;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  
+    .modal {
+      :global(.modal-header) {
+        background-color: #bdcac1;
+        text-align: center;
+        :global(.modal-title) {
+          font-weight: 900;
+          font-size: 1.5rem;
+  
+          strong {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #a04030;
+          }
+        }
+      }
+  
+      :global(.modal-body) {
+        background-color: #ede8dd;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  
+  

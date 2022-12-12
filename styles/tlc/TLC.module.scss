@@ -1,0 +1,203 @@
+
+.testimonials {
+  background-color: #e6decc;
+
+  .thumbnail {
+    cursor: pointer;
+    img {
+      width: 100%;
+      min-height: 120px;
+      filter: grayscale(100%);
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    img.selected {
+      filter: none;
+    }
+  }
+
+  .commentCont {
+    background-color: white;
+    box-shadow: 20px 20px 50px 15px gray;
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #4285f4;
+      font-family: "Candara";
+    }
+    .salutation {
+      color: #2832c2;
+      font-weight: 900;
+    }
+  }
+}
+
+.designAwards {
+  background-color: #e6decc;
+
+  .thumbnail {
+    cursor: pointer;
+    display: inline-block;
+    img {
+      width: 100%;
+    }
+    p {
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+  }
+}
+
+.buildingAwards {
+  background-color: #e6decc;
+
+  .imgCont {
+    box-shadow: -12px 12px 12px #505050;
+    img {
+      object-fit: cover;
+      height: 90px;
+      width: 100%;
+    }
+  }
+}
+
+.inPublications {
+  background-color: #e6decc;
+
+  .magazineCont {
+    padding-bottom: 1%;
+    margin-top: 5%;
+    width: 100%;
+    .blurbCont {
+      position: relative;
+      .blurb {
+        background-color: #bdcac1;
+        padding-top: 1%;
+        padding-bottom: 15%;
+        padding-right: 2%;
+        padding-left: 9%;
+        margin-top: -25px;
+        margin-left: 5px;
+        position: absolute;
+        left: 10%;
+        height: 350px;
+        width: 60%;
+      }
+    }
+
+    .pagesCont {
+      display: inline-block;
+      position: relative;
+
+      .coverPage {
+        display: inline-block;
+        img {
+          width: 190px;
+          height: 280px;
+          box-shadow: 12px 12px 12px #505050;
+        }
+      }
+      .pages {
+        display: inline-block;
+        width: 70px;
+        height: 90px;
+        img {
+          width: inherit;
+          height: inherit;
+          position: absolute;
+          bottom: 0;
+          box-shadow: 12px 12px 12px #505050;
+        }
+      }
+    }
+  }
+
+  .published {
+    .magSubHeader {
+      color: #553c14;
+      font-size: 1.2rem;
+      font-family: "Georgia";
+      font-weight: bold;
+    }
+
+    .magHeader {
+      color: #553c14;
+      font-size: 1.7rem;
+      font-family: "Georgia";
+      font-weight: bold;
+    }
+
+    .magCont {
+      .imgCont {
+        img {
+          width: 180px;
+          height: 230px;
+          box-shadow: 12px 12px 12px #505050;
+        }
+      }
+
+      .label {
+        height: 60px;
+        display: grid;
+        align-items: flex-end;
+        color: #553c14;
+        font-size: 0.9rem;
+        font-family: "Georgia";
+        font-weight: bold;
+        width: 95%;
+      }
+    }
+  }
+}
+
+.header {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #668671;
+  text-transform: uppercase;
+  font-family: "FelixTitling";
+}
+
+.subHeader {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #668671;
+  text-transform: uppercase;
+  font-family: "FelixTitling";
+}
+
+.borderBtm {
+  border-bottom: solid #668671;
+}
+
+.blurb {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.modal {
+  :global(.modal-header) {
+    background-color: #bdcac1;
+    text-align: center;
+    :global(.modal-title) {
+      font-weight: 900;
+      font-size: 1.5rem;
+
+      strong {
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: #a04030;
+      }
+    }
+  }
+
+  :global(.modal-body) {
+    background-color: #ede8dd;
+  }
+  img {
+    width: 100%;
+  }
+}

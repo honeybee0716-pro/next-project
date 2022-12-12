@@ -1,0 +1,153 @@
+@import "_utils/base";
+@import "_utils/parameters";
+
+.header {
+  .topHeader {
+    text-align: right;
+    background-color: black;
+    padding: 3px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    a {
+      color: #ce7203 !important;
+      font-weight: 700;
+      margin-left: 0.3rem;
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.navbarCont::before {
+  position: absolute;
+  content: "";
+  border: 2px dotted #998e72;
+  height: 85%;
+  width: 99.5%;
+  left: 5px;
+  top: 5px;
+
+  @include media-breakpoint-max(sm) {
+    width: 99%;
+  }
+}
+//
+
+.navbarCont {
+  box-shadow: $box-shadow-navbar;
+  z-index: 1;
+
+  :global(.collapse.show) {
+    background-color: rgba(0, 0, 0, 0.9);
+
+    a {
+      color: white;
+    }
+    .selected {
+      a {
+        color: white;
+      }
+    }
+  }
+
+  :global(.navbar-brand) {
+    padding-top: 0;
+    margin-right: 0;
+  }
+
+  :global(#nav-icon1) {
+    top: -8px;
+    width: 2em;
+  }
+
+  :global(.navbar-nav) {
+    align-items: center;
+  }
+
+  :global(.nav-item) {
+    padding: 1vw;
+  }
+}
+
+@media only screen and (max-width: 450px) and (min-width: 300px) {
+  .navbarCont {
+    padding: 5px 5px 5px 5px;
+  }
+}
+@media only screen and (max-width: 1430px) and (min-width: 450px) {
+  .navbarCont {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+@media only screen and (max-width: 1930px) and (min-width: 1430px) {
+  .navbarCont {
+    padding: 10px;
+  }
+}
+.menuButton {
+  z-index: 1;
+
+  a {
+    color: #4f2407;
+    font-weight: 900;
+    font-size: 1.1vw;
+    text-align: center;
+    font-family: "Roboto";
+    letter-spacing: 0.6px;
+    line-height: 1.1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  a:hover {
+    border-bottom: 3px solid #6b543b;
+    text-decoration: none;
+  }
+
+  .selected {
+    a {
+      color: #ba6d19;
+      border-bottom: 3px solid #6b543b;
+    }
+  }
+  .notSelected {
+    border-bottom: none;
+  }
+}
+.navbarBrandSection {
+  width: 40%;
+  .logo {
+    margin-bottom: -5%;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 2040px) and (min-width: 1430px) {
+  .logo {
+    width: 100%;
+  }
+}
+// .menuCollapse {
+//   // display: flex !important;
+//   // flex-basis: auto;
+// }
+@include media-breakpoint-max(sm) {
+  .logo {
+    max-height: 75px;
+    padding-left: 0;
+    display: block;
+  }
+
+  .menuButton {
+    z-index: 1;
+    a {
+      font-size: 0.9rem;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.resources {
+  background-color: #e6decc;
+
+  h2,
+  h3 {
+    text-align: center;
+    color: #553c14;
+    font-family: "Georgia";
+    font-weight: 900;
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  p {
+    font-weight: 700;
+  }
+
+  .logoCont {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      min-width: 150px;
+    }
+  }
+}
+
+@media (max-width: 1920px) {
+  .resources :global(.container) {
+    max-width: 85%;
+  }
+}

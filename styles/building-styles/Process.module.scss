@@ -1,0 +1,30 @@
+.process {
+    border: 3px solid #a04030;
+    padding: 0 2%;
+  
+    .activeCont {
+      display: block;
+      margin: 1% 0 3% 0;
+      img {
+        width: 100%;
+      }
+    }
+  
+    .thumbs {
+      width: 25%;
+      display: inline-grid;
+      padding: 0 3%;
+  
+      img {
+        width: 100%;
+      }
+      span {
+        font-size: 1rem;
+        color: #a04030;
+        padding-top: 4%;
+      }
+    }
+  }
+  
+  
+  

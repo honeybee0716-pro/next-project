@@ -1,0 +1,44 @@
+@import "../components/button";
+
+.signUpModal {
+
+  input[type="text"], input[type="email"]  {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  label {
+    font-weight: 900;
+    margin-bottom: 0;
+  }
+
+  .inputLabel {
+    font-weight: 900;
+    width: 100%;
+    text-align: right;
+    color: #704020;
+  }
+
+  @media (max-width: 767.98px) {
+    .inputLabel {
+      text-align: left;
+    }
+  }
+
+  :global(.modal-body) {
+    background-color: #ede8dd;
+  }
+
+  :global(.modal-header) {
+    background-color: #ede8dd;
+    border-bottom: 2px solid #dee2e6;
+  }
+
+  :global(.modal-title) {
+    font-weight: 900;
+  }
+
+  .signUpBtn {
+    @extend .yellow-rounded-btn;
+  }
+}

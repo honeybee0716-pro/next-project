@@ -1,0 +1,99 @@
+@media (max-width: 1920px) {
+  .gallerySection :global(.container) {
+    max-width: 90%;
+  }
+}
+
+.gallerySection {
+  .gallery {
+    background-color: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 2% 2%;
+    border-radius: 40px;
+
+    .displayCont {
+      height: 600px;
+      .imageCont {
+        width: 100%;
+        height: 95%;
+        img {
+          height: inherit;
+          width: 100%;
+          object-fit: contain;
+        }
+        @media only screen and (max-width: 767px) {
+          margin-top: 3%;
+        }
+      }
+
+      .videoCont {
+        //padding:0;margin:0;box-sizing:border-box;
+        // width: 100%; // Reset width
+        // height: 480px; // Reset height
+      }
+    }
+
+    .carouselCont {
+      overflow-y: scroll;
+      cursor: pointer;
+      height: 600px;
+      @media only screen and (max-width: 767px) {
+        height: 240px;
+        margin-bottom: 5%;
+      }
+      img {
+        width: 100%;
+      }
+      .thumbnailCont {
+        border: 1px solid #838383;
+        padding: 1px;
+        border-radius: 5px;
+        img {
+          max-height: 70px;
+          object-fit: cover;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .sectionLabel {
+    color: white;
+    font-size: 1.5em;
+    font-family: "Berlin Sans FB";
+    margin-left: 1.5%;
+    @media only screen and (max-width: 767px) {
+      font-size: 1em;
+    }
+  }
+  .subSectionLabel {
+    color: white;
+    font-size: 1em;
+    font-family: "Berlin Sans FB";
+    margin-left: 1.5%;
+    @media only screen and (max-width: 767px) {
+      font-size: 0.7em;
+    }
+  }
+}
+
+.plansSection {
+  .prev {
+    font-family: "Berlin Sans FB";
+    background: #618c70 !important;
+    padding: 4px 20px;
+    color: #fff;
+    box-shadow: 0px 6px 12px #6d6d6d;
+    font-size: 1.2rem;
+    border: solid 1px #5c5c5c;
+  }
+  .imgPlansSection {
+    align-items: center;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

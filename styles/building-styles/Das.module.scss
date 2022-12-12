@@ -1,0 +1,204 @@
+.dasGallery {
+  background-color: black;
+  border-radius: 40px;
+
+  .displayCont {
+    height: 600px;
+    .caption {
+      color: white;
+      font-weight: 900;
+      font-size: 2rem;
+    }
+
+    .vidCont {
+      width: 100%;
+      height: 100%;
+    }
+
+    .imgCont {
+      height: 100%;
+      width: 100%;
+      img {
+        height: inherit;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .listCont {
+    max-height: 800px;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+    }
+
+    .thumb {
+      border: 1px solid #838383;
+      padding: 1px;
+      border-radius: 5px;
+      img {
+        width: 100%;
+        height: 60px;
+        object-fit: cover;
+      }
+    }
+  }
+  .viewMore {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+.videoThumbCont {
+  position: relative;
+  width: 90%;
+
+  img {
+    width: 100%;
+    border: 1px solid #838383;
+    padding: 1px;
+    border-radius: 5px;
+    height: 120px;
+    object-fit: cover;
+  }
+
+  .playButton {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 45px;
+    width: 65px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+  }
+
+  .playButton:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .playButton:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 12.5px 0 12.5px 20px;
+    border-color: transparent transparent transparent rgba(255, 255, 255, 1);
+  }
+}
+
+.timeLapse {
+  .videoThumbCont {
+    max-width: 50%;
+    display: inline-flex;
+    img {
+      height: 80px;
+    }
+  }
+}
+
+.technical {
+  .videoThumbCont {
+    max-width: 33.33%;
+    display: inline-flex;
+    img {
+      height: 60px;
+    }
+  }
+}
+
+.sectionLabel {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.carouselRightBtn,
+.carouseLeftBtn {
+  cursor: pointer;
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  bottom: -55%;
+  img {
+    height: 60px;
+  }
+}
+
+.carouseLeftBtn {
+  left: 10%;
+}
+
+.carouselRightBtn {
+  right: 10%;
+}
+
+
+@media (max-width: 991.98px) {
+  .carouseLeftBtn {
+    left: 5%;
+  }
+  
+  .carouselRightBtn {
+    right: 5%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .carouselRightBtn,
+  .carouseLeftBtn {
+    bottom: -55%;
+  }
+
+  .carouseLeftBtn {
+    left: 15%;
+  }
+  
+  .carouselRightBtn {
+    right: 15%;
+  }
+
+  .timeLapse {
+    .videoThumbCont {
+      max-width: 33.33%;
+    }
+  }
+  
+  .technical {
+    .videoThumbCont {
+      max-width: 33.33%;    
+    }
+  }
+
+  .dasGallery {
+    .listCont {
+      max-height: unset;
+    }
+    .displayCont {
+      height: 300px;
+    }
+  }
+}
+
+
+@media (max-width: 575.98px) {
+  .carouseLeftBtn {
+    left: 5%;
+  }
+  
+  .carouselRightBtn {
+    right: 5%;
+  }
+
+}

@@ -1,0 +1,48 @@
+.mainImg {
+  object-fit: fill;
+  width: 100%;
+  box-shadow: -2px 7px 8px #505050;
+  z-index: 1;
+  max-height: 300px;
+}
+.defaultBg {
+  background-color: #e6decc;
+}
+
+.intro {
+  .titleCont {
+    margin-top: 20px;
+    text-align: center;
+    h3 {
+      font-weight: 900;
+      font-size: 2.5rem;
+    }
+    p {
+      font-weight: 500;
+      font-size: 1.5rem;
+    }
+  }
+
+  .introCardsCont {
+    margin-bottom: 50px;
+    .imgCont {
+      cursor: pointer;
+      background-color: #d7d7d7;
+      padding: 15px;
+      img {
+        width: 100%;
+      }
+      h4 {
+        margin-top: 5%;
+        text-align: center;
+        font-weight: 900;
+      }
+    }
+    p {
+      margin-top: 5%;
+      font-weight: 500;
+      font-size: 1.4rem;
+      text-align: center;
+    }
+  }
+}

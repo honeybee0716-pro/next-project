@@ -1,0 +1,30 @@
+@media (max-width: 1920px) {
+  .qnaSection :global(.container) {
+    max-width: 90%;
+  }
+}
+
+.qnaSection {
+  background-color: #e6decc;
+
+  .header {
+    font-size: 1.4rem;
+    font-family: "Georgia";
+    font-weight: bold;
+    color: #795d47;
+  }
+
+  .questions {
+    font: bold 1em Arial;
+    color: #795d47;
+    cursor: pointer;
+  }
+
+  .questions:hover {
+    color: #ff0000;
+  }
+
+  .answers {
+    font: 0.9em Arial;
+  }
+}

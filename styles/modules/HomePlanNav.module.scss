@@ -1,0 +1,114 @@
+@import "../components/button";
+
+.hpNav {
+  overflow: auto;
+  font-family: "Candara";
+
+  .label {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #7e0e0e;
+    margin-bottom: 10px;
+  }
+
+  .arrow {
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-size: 100% 100%;
+    color: white;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+  }
+
+  .nextBtnCont {
+    float: right;
+    margin: 3%;
+  }
+
+  .prevBtnCont {
+    float: left;
+    margin: 3%;
+  }
+}
+
+.goToPlan {
+  box-shadow: -2px 7px 8px #505050;
+  width: 120px;
+}
+
+.searchModal {
+  .thumbCont {
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 3px solid green;
+      box-shadow: -2px 7px 8px #505050;
+    }
+  }
+
+  input[type="text"] {
+    width: 90%;
+    float: right;
+  }
+
+  .label {
+    font-weight: 700;
+  }
+
+  :global(.modal-body) {
+    text-align: left;
+    background-color: #ede8dd;
+  }
+
+  :global(.modal-header) {
+    background-color: #ede8dd;
+    font-weight: 700;
+    border-bottom: 2px solid black;
+  }
+
+  .btn {
+    @extend .yellow-rounded-btn;
+  }
+}
+
+.searchResCont {
+  background-color: #ebe1c8;
+
+  :global(tbody + thead) {
+    display: none;
+  }
+
+  :global(.dataTables_wrapper) {
+    background-color: #eeee;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+
+  :global(td) {
+    font-size: 0.9rem;
+  }
+
+  :global(th) {
+    font-size: 1rem;
+    font-weight: 900;
+  }
+
+  .header {
+    color: #553c14;
+    font-size: 2rem;
+    font-family: "Georgia";
+    font-weight: bold;
+  }
+}
+
+.floaterNavCont {
+  position: fixed;
+  z-index: 1000;
+  position: fixed;
+  right: 15px;
+  bottom: 5vh;
+}

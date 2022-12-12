@@ -1,0 +1,68 @@
+.hotm {
+  background-color: #e6decc;
+
+  .mainImgCont {
+    .title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      display: inline-flex;
+    }
+    .subTitle {
+      font-size: 1.5rem;
+      font-weight: 500;
+      display: inline-flex;
+    }
+
+    img {
+      width: 100%;
+      box-shadow: 12px 12px 12px #505050;
+    }
+  }
+
+  .label {
+    font-weight: 500;
+    font: bold italic 1.5rem "Trebuchet MS", Geneva;
+    color: #5e4f48;
+  }
+
+  .iconCont {
+    img {
+      box-shadow: 12px 12px 12px #505050;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+  }
+
+
+  .iconCont:hover {
+    img {
+      transition:0.5s;
+      transform: scale(1.2);
+    }
+  }
+
+  .left {
+    cursor: pointer;
+  }
+
+  .desc {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .fpSection {
+    background-color: white;
+    box-shadow: 12px 12px 12px #505050;
+    border-radius: 25px;
+
+    .fpImgCont {
+      img {
+        display: grid;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+      }
+    }
+  }
+}

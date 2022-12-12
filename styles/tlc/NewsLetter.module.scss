@@ -1,0 +1,74 @@
+.newsLetter {
+  background-color: #e6decc;
+
+  .back {
+    cursor: pointer;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #553c14;
+    font-family: "Georgia";
+  }
+
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #553c14;
+    font-family: "Georgia";
+  }
+
+  .subText {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+
+  .desc {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .right {
+    cursor: pointer;
+    .imgCont {
+      img {
+        box-shadow: 12px 12px 12px #505050;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+    }
+  }
+
+  .newsletterCont {
+    cursor: pointer;
+    display: inline-block;
+    width: 20%;
+
+    img {
+      max-width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 12px 12px 12px #505050;
+    }
+  }
+
+  .newsLetterLabel {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #553c14;
+  }
+
+  @media (max-width: 575.98px) {
+    .newsletterCont {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .newsletterCont {
+      width: 100%;
+    }
+  }
+}

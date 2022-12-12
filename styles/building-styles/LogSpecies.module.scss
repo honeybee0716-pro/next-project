@@ -1,0 +1,99 @@
+.logSpecies {
+  background-color: #e6decc;
+  padding-bottom: 15px;
+  .section1 {
+    padding: 2%;
+    .leftCont {
+      .mainImgCont {
+        text-align: left;
+        position: relative;
+        padding: 5%;
+        img {
+          border: solid 10px #ffffff;
+          box-shadow: 0 0 30px #414141;
+          z-index: 9;
+          position: relative;
+          width: 100%;
+        }
+      }
+      .mainImgCont::before {
+        position: absolute;
+        background-color: #591540;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        content: "";
+      }
+    }
+
+    .rightCont {
+      h3 {
+        font-weight: 900;
+        font-size: 3em;
+      }
+      p {
+        font-size: 1.4em;
+      }
+    }
+  }
+  .section2 {
+    background-color: #bdcac1;
+    padding: 5%;
+    margin-left: 15px;
+    margin-right: 15px;
+    .card {
+      margin: 10px;
+      justify-content: center;
+      img {
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      h4 {
+        margin-top: 10px;
+        font-weight: 900;
+        font-size: 2rem;
+        display: block;
+        text-align: center;
+      }
+      p {
+        font-weight: 600;
+        text-align: center;
+        font-size: 1.4rem;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+.logSpeciesModal {
+  .info {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: red !important;
+  }
+
+  :global(.modal-body) {
+    background-color: #ede8dd;
+  }
+
+  :global(.modal-header) {
+    background-color: #ede8dd;
+    border-bottom: 2px solid #dee2e6;
+  }
+
+  .imgCont {
+    width: 50%;
+    float: right;
+    border: solid 1px black;
+    img {
+      width: 100%;
+    }
+  }
+
+  .title {
+    font-family: "Candara Bold";
+  }
+}

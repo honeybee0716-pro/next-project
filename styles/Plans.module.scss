@@ -1,0 +1,193 @@
+.topSection {
+  padding: 0;
+
+  .jumbotron {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .dropdownContainer {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    min-width: 350px;
+  }
+
+  .dropDown {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .dropDownToggle {
+    background: #618c70 !important;
+  }
+
+  .dropDownMenu {
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    overflow: auto;
+  }
+
+  .search {
+    padding: 5px;
+    background-color: #618c70;
+    text-align: center;
+  }
+}
+
+.navBarSection {
+  .title {
+    margin-left: 15px;
+  }
+  .title span {
+    font-size: 0.9em;
+    color: #fff;
+    font-weight: 500;
+    border-bottom: solid #c4d2c9;
+  }
+
+  .menuButton {
+    z-index: 1;
+    a {
+      color: white;
+      font-weight: 600;
+      font-size: 1.2em;
+      margin-left: 1em;
+      margin-right: 1em;
+    }
+    a:hover {
+      border-bottom: 4px solid #6b543b;
+    }
+    .selected {
+      color: black;
+      border-bottom: 4px solid #6b543b;
+    }
+    .notSelected {
+      border-bottom: none;
+    }
+  }
+
+  .navbarContainer {
+    background: #618c70 !important;
+    padding: 5px;
+    box-shadow: -2px 7px 8px #505050;
+    position: relative;
+  }
+
+  .navbarContainer::after {
+    position: absolute;
+    content: "";
+    border: 2px dotted #9bb3a3;
+    height: 85%;
+    width: 99.4%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.gallerySection {
+  .title {
+    font-size: 2em;
+    position: relative;
+    color: #666261;
+    font-weight: 700;
+    margin: 0.5em;
+  }
+  .title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 160px;
+    background: #c78326;
+    height: 7px;
+  }
+
+  .cards {
+    display: inline-block;
+    width: 265px;
+    margin: 20px;
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .planLabel {
+      .cardLabel {
+        font-weight: 700;
+        color: #3a3a3a;
+        font-size: 1.3rem;
+      }
+      .cardLabel2 {
+        margin-left: 5px;
+        font-weight: 600;
+        font-size: 1rem;
+      }
+
+      p {
+        text-align: left;
+        margin-bottom: 0;
+      }
+    }
+
+    .cardImage {
+      box-shadow: -12px 12px 12px #505050;
+      .img {
+        object-fit: cover;
+        width: 100%;
+        height: 180px;
+        transition: transform 0.7s;
+        z-index: 1;
+      }
+      .img:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.homePlanDetails {
+  padding: 0;
+  .homePlanBanner {
+    width: 100%;
+  }
+  .jumbotron {
+    margin-bottom: 0;
+    padding: 0;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.btnCont {
+  padding-bottom: 50px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.nextPlanBtn,
+.backToGalleryBtn {
+  font-family: "Berlin Sans FB";
+  background: #618c70 !important;
+  padding: 4px 20px;
+  color: #fff;
+  box-shadow: 0px 6px 12px #6d6d6d;
+  font-size: 20px;
+  border: solid 1px #5c5c5c;
+}
+
+.backToGalleryBtn {
+  float: left;
+  margin-left: 50px;
+}
+
+.nextPlanBtn {
+  float: right;
+  margin-right: 50px;
+}

@@ -1,0 +1,193 @@
+@import "../_utils/base";
+@import "../_utils/parameters";
+
+.studySetSection {
+  background-color: #e6decc;
+
+  :global(.react-datepicker-wrapper) {
+    width: 100%;
+  }
+
+  .formCont {
+    .formSectionTitle {
+      padding-top: 1.5em;
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #668671;
+      text-transform: uppercase;
+      border-bottom: 2px solid #457656;
+      font-family: "FelixTitling";
+    }
+
+    .formText {
+      label {
+        font-size: 0.8rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        float: right;
+        text-align: center;
+        padding-top: 5px;
+      }
+      input {
+        width: 100%;
+        float: left;
+      }
+
+      @media (max-width: 780px) {
+        label {
+          float: none;
+        }
+      }
+    }
+
+    .inputBox {
+      height: 30px;
+      box-shadow: 3px 3px 6px #656565;
+      border: 1px solid #656565;
+    }
+  }
+
+  .selectCont {
+    select {
+      height: 30px;
+      width: 100%;
+    }
+  }
+
+  .formCyd {
+    .title {
+      color: #890101;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+    .imgCont {
+      img {
+        height: 100px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .noImgCont {
+      img {
+        max-height: 100px;
+        max-width: 100%;
+      }
+    }
+
+    select {
+      height: 30px;
+      width: 100%;
+    }
+  }
+
+  .formRadio {
+    label,
+    span {
+      margin-right: 10px;
+      font-size: 0.9em;
+      font-weight: 900;
+    }
+
+    [type="radio"]:checked,
+    [type="radio"]:not(:checked) {
+      position: absolute;
+      left: -9999px;
+    }
+    [type="radio"]:checked + label,
+    [type="radio"]:not(:checked) + label {
+      position: relative;
+      padding-left: 20px;
+      cursor: pointer;
+      line-height: 20px;
+      display: inline-block;
+    }
+    [type="radio"]:checked + label:before,
+    [type="radio"]:not(:checked) + label:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 18px;
+      height: 18px;
+      border: 1px solid #ddd;
+      border-radius: 100%;
+      background: #457656;
+    }
+    [type="radio"]:not(:checked) + label:before {
+      background: #fff;
+    }
+    [type="radio"]:checked + label:after,
+    [type="radio"]:not(:checked) + label:after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: #fff;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      border-radius: 100%;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+    [type="radio"]:not(:checked) + label:after {
+      opacity: 0;
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+    [type="radio"]:checked + label:after {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+
+  .descCont {
+    h3 {
+      font-size: 2.5rem;
+      font-weight: 900;
+    }
+    h4 {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    p {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.completeOrderContainer {
+  .completeOrderBtn {
+    border-radius: 15px;
+    font-size: 1.2rem;
+    border: solid 2px #000;
+    color: #fff !important;
+    font-weight: 600;
+    background-color: #618c70 !important;
+    float: right;
+  }
+
+  .completeOrderBtn:hover {
+    background-color: black !important;
+    transform: scale(1.2);
+  }
+}
+
+.completeOrderSubtextCont {
+  .completeOrderSubtext {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000;
+    float: right;
+    text-align: center;
+  }
+}
+
+.ackCont {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+}
